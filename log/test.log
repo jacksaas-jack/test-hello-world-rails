@@ -1,0 +1,18 @@
+
+!!! RubyLLM's legacy acts_as API is deprecated and will be removed in RubyLLM 2.0.0. Please consult the migration guide at https://rubyllm.com/upgrading-to-1-7/
+
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mBEGIN deferred TRANSACTION[0m
+------------------------------------------
+HelloControllerTest: test_should_get_world
+------------------------------------------
+Started GET "/" for 127.0.0.1 at 2026-03-24 19:01:45 +0100
+Processing by HelloController#world as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering hello/world.html.erb within layouts/application
+  Rendered hello/world.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 8.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TRANSACTION[0m
